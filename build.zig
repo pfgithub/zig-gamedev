@@ -42,6 +42,8 @@ pub const min_zig_version = std.SemanticVersion{
 };
 
 pub fn build(b: *std.Build) void {
+    if(true) return;
+
     ensureZigVersion() catch return;
 
     if (checkGitLfsContent() == false) {
